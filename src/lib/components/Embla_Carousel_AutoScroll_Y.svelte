@@ -19,21 +19,21 @@
       <div class="embla__slide">
         <img
           class="embla__slide__img"
-          src="http://placekitten.com/g/800/300"
+          src="https://placekitten.com/g/800/300"
           alt="alt"
         />
       </div>
       <div class="embla__slide">
         <img
           class="embla__slide__img"
-          src="http://placekitten.com/g/800/300"
+          src="https://placekitten.com/g/800/300"
           alt="alt"
         />
       </div>
       <div class="embla__slide">
         <img
           class="embla__slide__img"
-          src="http://placekitten.com/g/800/300"
+          src="https://placekitten.com/g/800/300"
           alt="alt"
         />
       </div>
