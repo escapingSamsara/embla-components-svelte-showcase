@@ -1,0 +1,101 @@
+.embla {
+  position: relative;
+  max-width:100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  .embla__viewport {
+    overflow: hidden;
+    display: block;  border-radius: 8px;
+  }
+
+  .embla__container {
+    display: flex;
+    margin-left: -10px;  border-radius: 8px;
+  }
+
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    padding-left: 10px;
+    height: 300px;
+    counter-increment: slide-number;
+    position: relative;  border-radius: 8px;
+  }
+
+  .embla__slide:before {
+    position: absolute;
+    content: counter(slide-number);
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color:#00adb5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: Poppins, sans-serif;
+  }
+
+  .embla__slide__img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .embla__button {
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    touch-action: manipulation;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    fill:#00adb5;
+    padding: 0;
+  }
+
+  .embla__button:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  .embla__button__svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .embla__button--prev {
+    left: 27px;
+  }
+
+  .embla__button--next {
+    right: 27px;
+  }}
+
+.section-header{
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
